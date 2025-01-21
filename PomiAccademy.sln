@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomiGeometry", "PomiGeometr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomiWinForm", "PomiWinForm\PomiWinForm.csproj", "{F46961CD-94C7-40DE-B206-7D6A99FA2B77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSystem", "MailSystem\MailSystem.csproj", "{FFF3400F-4771-45C3-A3E1-C7AA57545E4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F46961CD-94C7-40DE-B206-7D6A99FA2B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F46961CD-94C7-40DE-B206-7D6A99FA2B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F46961CD-94C7-40DE-B206-7D6A99FA2B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF3400F-4771-45C3-A3E1-C7AA57545E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF3400F-4771-45C3-A3E1-C7AA57545E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF3400F-4771-45C3-A3E1-C7AA57545E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF3400F-4771-45C3-A3E1-C7AA57545E4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

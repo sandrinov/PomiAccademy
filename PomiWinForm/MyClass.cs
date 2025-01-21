@@ -18,7 +18,13 @@ namespace PomiWinForm
 
         public void _btn_Click(object? sender, EventArgs e)
         {
+            Object o;
             MessageBox.Show("Event handled by MyClass");
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
