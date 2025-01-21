@@ -26,7 +26,14 @@ namespace MailSystem
                 { Body = body, From=from, Obj=obj, To=to };
             if (MailArrived != null )
             {
-                MailArrived(this, args);
+                //MailArrived(this, args);
+
+                Delegate[] arrayOfDelegate = MailArrived.GetInvocationList();
+                for ( int i = 0; i < arrayOfDelegate.Length; i++ )
+                {
+                    MailEventHandler eh = (MailEventHandler)arrayOfDelegate[i];
+                    eh(this, args);
+                }
             }
         }
     }
