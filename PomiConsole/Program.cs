@@ -22,6 +22,7 @@ namespace PomiConsole
 
         private static void PrintF(FiguraGeometrica f)
         {
+            //
             f.PrintFigura();
         }
 
