@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomiConsole", "PomiConsole\PomiConsole.csproj", "{9D74A0EC-6DBD-4AB4-ACF7-5FBA4AA0BA60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomiConsole", "PomiConsole\PomiConsole.csproj", "{9D74A0EC-6DBD-4AB4-ACF7-5FBA4AA0BA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomiGeometry", "PomiGeometry\PomiGeometry.csproj", "{9CDD8017-19A0-4517-A033-ACA0066E8C62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomiGeometry", "PomiGeometry\PomiGeometry.csproj", "{9CDD8017-19A0-4517-A033-ACA0066E8C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomiWinForm", "PomiWinForm\PomiWinForm.csproj", "{F46961CD-94C7-40DE-B206-7D6A99FA2B77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9CDD8017-19A0-4517-A033-ACA0066E8C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CDD8017-19A0-4517-A033-ACA0066E8C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CDD8017-19A0-4517-A033-ACA0066E8C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F46961CD-94C7-40DE-B206-7D6A99FA2B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46961CD-94C7-40DE-B206-7D6A99FA2B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46961CD-94C7-40DE-B206-7D6A99FA2B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46961CD-94C7-40DE-B206-7D6A99FA2B77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

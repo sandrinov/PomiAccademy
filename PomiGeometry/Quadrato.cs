@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PomiGeometry
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Quadrato : FiguraGeometrica
     {
         private double _lato;

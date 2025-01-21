@@ -5,9 +5,15 @@ namespace PomiConsole
 {
     public class Program
     {
+        public delegate int MethodPointer(String s);
         static void Main(string[] args)
         {
             TestGeo();
+            TestClass tc = new TestClass();
+
+            MethodPointer mp1 = new MethodPointer(tc.GetLength);
+            int len = mp1("òlmòljòljòljk");
+
         }
 
         private static void TestGeo()
@@ -19,7 +25,10 @@ namespace PomiConsole
             PrintF(q2);
             PrintF(c1);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="f"></param>
         private static void PrintF(FiguraGeometrica f)
         {
             //
