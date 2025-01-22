@@ -10,25 +10,35 @@ namespace SQLTest
         {
             string query = "SELECT * FROM Asset";
 
-            SqlConnection connection = new SqlConnection(sql_conn);
-            connection.Open();
-            Console.WriteLine("Connessione al database riuscita.");
+            using (SqlConnection connection = new SqlConnection(sql_conn))
+            {              
+                try
+                {
+                    connection.Open();
+                    Console.WriteLine("Connessione al database riuscita.");
 
-            SqlCommand command = new SqlCommand(query, connection);
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                int id = reader.GetInt32(0);
+                                string assetname = reader.GetString(1);
+                                string assettype = reader.GetString(3);
 
-            SqlDataReader reader = command.ExecuteReader();
-
-            while (reader.Read())
-            {
-                
-                int id = reader.GetInt32(0);
-                string assetname = reader.GetString(1);
-                string assettype = reader.GetString(3);
-
-                Console.WriteLine($"ID: {id}, Name: {assetname}, type: {assettype}");
-            }
-            reader.Close();
-            connection.Close();
+                                Console.WriteLine($"ID: {id}, Name: {assetname}, type: {assettype}");
+                            }
+                            reader.Close();
+                            connection.Close();
+                        }
+                    } 
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }          
         }
     }
 }
