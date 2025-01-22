@@ -8,6 +8,14 @@ namespace PomiConsole
         public delegate int MethodPointer(String s);
         static void Main(string[] args)
         {
+
+            StaticSample s1 = new StaticSample();
+            StaticSample s2 = new StaticSample();
+            StaticSample.counter++;
+
+            s1.PrintCounter();
+            s2.PrintCounter();
+
             TestGeo();
             TestClass tc = new TestClass();
 
@@ -31,7 +39,6 @@ namespace PomiConsole
         /// <param name="f"></param>
         private static void PrintF(FiguraGeometrica f)
         {
-            //
             f.PrintFigura();
         }
 

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSystem", "MailSystem\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmokeSystem", "SmokeSystem\SmokeSystem.csproj", "{CF97D688-D435-4A66-BE49-F524180394B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitExample", "AsyncAwaitExample\AsyncAwaitExample.csproj", "{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CF97D688-D435-4A66-BE49-F524180394B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF97D688-D435-4A66-BE49-F524180394B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF97D688-D435-4A66-BE49-F524180394B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

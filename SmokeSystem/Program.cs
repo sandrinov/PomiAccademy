@@ -1,9 +1,13 @@
-﻿namespace SmokeSystem
+﻿
+namespace SmokeSystem
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            MyMethod(10);
+
+
             Dashboard d = new Dashboard();
             Sensor[] arrayOfSensor = new Sensor[10];
 
@@ -18,6 +22,11 @@
             arrayOfSensor[3].SimulateSmokeDected();
             arrayOfSensor[5].SimulateSmokeDected();
             arrayOfSensor[9].SimulateSmokeDected();
+        }
+
+        private static void MyMethod(int v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
