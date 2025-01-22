@@ -4,14 +4,25 @@ namespace SQLTest
 {
     internal class Program
     {
-        private static string sql_conn = "Server=tcp:sqlservercboxtest.database.windows.net,1433;Initial Catalog=AvioAssetChainDB;Persist Security Info=False;User ID=pomi-admin;Password=Addtech2021!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private static string sql_conn = "Server=tcp:sqlservercboxtest.database.windows.net,1433;Initial Catalog=xxxxxxxxxxxxx;Persist Security Info=False;User ID=xxxxxxxxxx;Password=xxxxxxxxxxx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         static void Main(string[] args)
+        {
+            FirstTest();
+            SecondTest();
+        }
+
+        private static void SecondTest()
+        {
+            
+        }
+
+        private static void FirstTest()
         {
             string query = "SELECT * FROM Asset";
 
             using (SqlConnection connection = new SqlConnection(sql_conn))
-            {              
+            {
                 try
                 {
                     connection.Open();
@@ -32,13 +43,13 @@ namespace SQLTest
                             reader.Close();
                             connection.Close();
                         }
-                    } 
+                    }
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
                 }
-            }          
+            }
         }
     }
 }
