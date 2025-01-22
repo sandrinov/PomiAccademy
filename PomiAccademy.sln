@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmokeSystem", "SmokeSystem\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitExample", "AsyncAwaitExample\AsyncAwaitExample.csproj", "{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLTest", "SQLTest\SQLTest.csproj", "{A51F9707-C0E4-46D9-A494-B329C29176A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A1C5D69-B8B4-40A7-8E5C-FB558343C1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51F9707-C0E4-46D9-A494-B329C29176A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51F9707-C0E4-46D9-A494-B329C29176A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51F9707-C0E4-46D9-A494-B329C29176A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51F9707-C0E4-46D9-A494-B329C29176A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
