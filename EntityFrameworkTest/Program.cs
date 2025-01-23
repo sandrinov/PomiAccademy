@@ -1,5 +1,8 @@
 ﻿
 using EntityFrameworkTest.EF;
+using System.Linq;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace EntityFrameworkTest
 {
@@ -16,7 +19,31 @@ namespace EntityFrameworkTest
 
         private static void OldTest()
         {
-            
+            AvioAssetChainDBContext ctx = new AvioAssetChainDBContext();
+
+            #region first implementation
+            //List<Asset> listOfAsset = ctx.Assets.ToList();
+
+            //foreach (var item in listOfAsset)
+            //{
+            //    var query_document = from qd in ctx.AssetDocuments
+            //                                where qd.AssetContainer == item.IdAsset
+            //                                select qd;
+
+            //    int numOfDocuments = query_document.ToList().Count();
+
+            //    Console.WriteLine("Asset: "+ item.AssetName + " \t\t num of documents: " + numOfDocuments);
+            //}
+            #endregion
+
+            var assets = ctx.Assets.Include("AssetDocuments").ToList();
+
+            //var asset2 = ctx.Assets.ToList();
+
+            foreach (Asset asset in assets)
+            {
+                Console.WriteLine("Asset: " + asset.AssetName + " \t\t num of documents: " + asset.AssetDocuments.Count);
+            }
         }
 
         private static void TestInsert()
@@ -34,9 +61,6 @@ namespace EntityFrameworkTest
             ctx.SaveChanges();
 
             Console.WriteLine( newAsset.IdAsset);
-
-
-
         }
 
         private static void TestSelect()
