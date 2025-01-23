@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLTest", "SQLTest\SQLTest.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkTest", "EntityFrameworkTest\EntityFrameworkTest.csproj", "{8377AA4B-E7E3-43BF-81A9-3C1C6E44984E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaSample", "LambdaSample\LambdaSample.csproj", "{C495BAD5-6E0B-4DED-872C-68F87821BB4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{8377AA4B-E7E3-43BF-81A9-3C1C6E44984E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8377AA4B-E7E3-43BF-81A9-3C1C6E44984E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8377AA4B-E7E3-43BF-81A9-3C1C6E44984E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C495BAD5-6E0B-4DED-872C-68F87821BB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C495BAD5-6E0B-4DED-872C-68F87821BB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C495BAD5-6E0B-4DED-872C-68F87821BB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C495BAD5-6E0B-4DED-872C-68F87821BB4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

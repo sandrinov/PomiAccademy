@@ -14,7 +14,40 @@ namespace EntityFrameworkTest
             var employee = new { FirstName = "Mario", BirthDate = DateTime.Now.AddYears(-20) };
             //TestSelect();
             //TestInsert();
-            OldTest();
+            //OldTest();
+            LinqSamples();
+        }
+
+        private static async void LinqSamples()
+        {
+            AvioAssetChainDBContext _context = new AvioAssetChainDBContext();
+            #region example 1
+            var assetsWithDocuments = await _context.Assets
+                                            .Include(a => a.AssetDocuments)
+                                            .ToListAsync();
+
+            foreach (var asset in assetsWithDocuments)
+            {
+                Console.WriteLine($"Asset: {asset.AssetName}");
+                foreach (var document in asset.AssetDocuments)
+                {
+                    Console.WriteLine($" - Documento: {document.AssetDocumentName}");
+                }
+            }
+            #endregion
+
+            #region example 2
+            var filteredAssets = await _context.Assets
+                    .Include(a => a.AssetDocuments)
+                    .Where(a => a.AssetDocuments.Any(d => d.AssetDocumentType.ToUpper() == "PDF"))
+                    .ToListAsync();
+
+            foreach (var asset in filteredAssets)
+            {
+                Console.WriteLine($"Asset con documenti PDF: {asset.AssetName}");
+            }
+            #endregion
+
         }
 
         private static void OldTest()
