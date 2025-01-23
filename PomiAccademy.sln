@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkTest", "Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaSample", "LambdaSample\LambdaSample.csproj", "{C495BAD5-6E0B-4DED-872C-68F87821BB4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSource", "DBSource\DBSource.csproj", "{8C09F50D-9C3D-463E-939C-4D7F9D76927C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C495BAD5-6E0B-4DED-872C-68F87821BB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C495BAD5-6E0B-4DED-872C-68F87821BB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C495BAD5-6E0B-4DED-872C-68F87821BB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C09F50D-9C3D-463E-939C-4D7F9D76927C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C09F50D-9C3D-463E-939C-4D7F9D76927C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C09F50D-9C3D-463E-939C-4D7F9D76927C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C09F50D-9C3D-463E-939C-4D7F9D76927C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
