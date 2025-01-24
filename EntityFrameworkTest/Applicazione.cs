@@ -11,6 +11,8 @@ namespace EntityFrameworkTest
     public class Applicazione
     {
         private IDataSource _datasource;
+        private const int pagesize = 10;
+
         public Applicazione(IDataSource datasource)
         {
             _datasource = datasource;
@@ -23,7 +25,29 @@ namespace EntityFrameworkTest
             //foreach (var asset_dto in asset_DTOs)
             //{
             //    Console.WriteLine(asset_dto);
-            //}           
+            //}
+            //
+            int currentPage = 1;
+            bool continuePaging = true;
+            while (continuePaging)
+            {
+                List<Asset_DTO> assets = _datasource.GetPagedAssets(currentPage, pagesize);
+                if(assets.Count == 0)
+                    continuePaging = false;
+                else
+                {
+                    foreach (Asset_DTO asset in assets)
+                    {
+                        Console.WriteLine(asset);
+                    }
+                    Console.WriteLine( "Pagina numero: " + currentPage);
+                    var key = Console.ReadLine();
+                    if (key == "q")
+                        continuePaging = false;
+                    else
+                        currentPage++;
+                }               
+            }
         }
     }
 }
