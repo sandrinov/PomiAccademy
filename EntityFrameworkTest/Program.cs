@@ -15,7 +15,14 @@ namespace EntityFrameworkTest
             //TestSelect();
             //TestInsert();
             //OldTest();
-            await LinqSamples();
+            //await LinqSamples();
+            TestApplicazione();
+        }
+
+        private static void TestApplicazione()
+        {
+            Applicazione app = new Applicazione();
+            app.Esegui();
         }
 
         private static async Task LinqSamples()

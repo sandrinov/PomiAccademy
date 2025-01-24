@@ -103,17 +103,21 @@ namespace EntityFrameworkTest.DataSource
 
         public List<Asset_DTO> GetAllAssets()
         {
-            throw new NotImplementedException();
+            return _assets;
         }
 
         public Asset_DTO GetAssetByID(int assetID)
         {
-            throw new NotImplementedException();
+           return  _assets.Where(a => a.IdAsset == assetID).FirstOrDefault();
         }
 
         public List<AssetDocument_DTO> GetAssetDocumentsByAssetID(int assetID)
         {
-            throw new NotImplementedException();
+            List<AssetDocument_DTO> resultList = new List<AssetDocument_DTO>();
+            Asset_DTO asset = _assets.Where(a => a.IdAsset == assetID).FirstOrDefault();
+            if (asset != null)
+                resultList = asset.Documents;
+            return resultList;
         }
 
         public List<Asset_DTO> GetPagedAssets(int pagenumber, int pagesize)

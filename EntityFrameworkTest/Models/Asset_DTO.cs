@@ -19,5 +19,11 @@ namespace EntityFrameworkTest.Models
         public string AssetType { get; set; }
 
         public List<AssetDocument_DTO> Documents { get; set; }
+
+        public override string ToString()
+        {
+            string res = $" {IdAsset} - Asset {AssetName}  with {Documents.Count} documents";
+            return res;
+        }
     }
 }
