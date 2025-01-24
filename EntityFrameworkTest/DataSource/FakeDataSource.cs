@@ -43,8 +43,6 @@ namespace EntityFrameworkTest.DataSource
                     }
                 }
             });
-
-
             _assets.Add(new Asset_DTO()
             {
                 AssetName = "asset3",
@@ -60,7 +58,6 @@ namespace EntityFrameworkTest.DataSource
                     }
                 }
             });
-
             _assets.Add(new Asset_DTO()
             {
                 AssetName = "asset4",
@@ -76,7 +73,6 @@ namespace EntityFrameworkTest.DataSource
                     }
                 }
             });
-
             _assets.Add(new Asset_DTO()
             {
                 AssetName = "asset5",
@@ -114,6 +110,7 @@ namespace EntityFrameworkTest.DataSource
         public List<AssetDocument_DTO> GetAssetDocumentsByAssetID(int assetID)
         {
             List<AssetDocument_DTO> resultList = new List<AssetDocument_DTO>();
+
             Asset_DTO asset = _assets.Where(a => a.IdAsset == assetID).FirstOrDefault();
             if (asset != null)
                 resultList = asset.Documents;
