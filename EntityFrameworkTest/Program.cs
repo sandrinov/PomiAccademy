@@ -3,6 +3,8 @@ using EntityFrameworkTest.EF;
 using System.Linq;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using EntityFrameworkTest.DataSource;
 
 namespace EntityFrameworkTest
 {
@@ -21,7 +23,17 @@ namespace EntityFrameworkTest
 
         private static void TestApplicazione()
         {
-            Applicazione app = new Applicazione();
+            //Applicazione app = new Applicazione();
+
+            // Configurazione del contenitore di Dependency Injection
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton<IDataSource, EF_DataSource>()  // Registra il servizio come singleton
+                .AddTransient<Applicazione>()                     // Registra l'applicazione come transiente
+                .BuildServiceProvider();
+
+            // Risoluzione dell'istanza di "Applicazione"
+            var app = serviceProvider.GetRequiredService<Applicazione>();
+
             app.Esegui();
         }
 
