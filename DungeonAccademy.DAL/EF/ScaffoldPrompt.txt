@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext  "Server=tcp:sqlservercboxtest.database.windows.net,1433;Database=DungeonAccademy_3;User ID=pomi-admin;Password=Addtech2021!;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -f -OutputDir  EF\ -Context  DungeonAccademyContext
