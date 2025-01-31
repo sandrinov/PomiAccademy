@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonAccademy.BusinessLog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonAccademy.DTO", "DungeonAccademy.DTO\DungeonAccademy.DTO.csproj", "{7B7B14FC-234D-46B1-A96B-2D07FC391F28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebAppMVC", "TestWebAppMVC\TestWebAppMVC.csproj", "{D0D188E7-20B6-40FF-9715-B726AD6BD495}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{7B7B14FC-234D-46B1-A96B-2D07FC391F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B7B14FC-234D-46B1-A96B-2D07FC391F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B7B14FC-234D-46B1-A96B-2D07FC391F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D188E7-20B6-40FF-9715-B726AD6BD495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D188E7-20B6-40FF-9715-B726AD6BD495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D188E7-20B6-40FF-9715-B726AD6BD495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D188E7-20B6-40FF-9715-B726AD6BD495}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
